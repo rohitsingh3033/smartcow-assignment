@@ -1,0 +1,60 @@
+@import url('https://css.gg/css?=sidebar-open|close-o|git-fork');
+
+.gg-close-o, .gg-sidebar-open, .gg-git-fork {
+  color: white;
+}
+
+#sideBarMenu {
+  height: 100vh;
+  width: 250px;
+  margin-top: 31px;
+  background-color: rgb(255, 254, 247);
+  border: 2px solid rgb(70, 7, 7);
+  position: fixed;
+  transform: translateX(-250px);
+  transition: transform 250ms ease-in-out;
+}
+
+#openSideBarMenu:checked ~ #sideBarMenu {
+  transform: translateX(0);
+}
+
+#openSideBarMenu {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  opacity: 0;
+}
+
+.sideBarToggle {
+  cursor: pointer;
+  position: fixed;
+  top: 13px;
+  left: 30px;
+  z-index: 1;
+}
+
+.sideBarItems {
+  list-style-type: none;
+  padding: 10px;
+}
+
+.sideBarItems li {
+  padding: 10px;
+}
+
+.sideBarItems a {
+  text-decoration: none;
+  font-size: 20px;
+  color: blue;
+}
+
+.gg-close-o{
+  border-radius : 0px !important;
+}
+
+@media (max-width: 600px) {
+  #sideBarMenu, #openSideBarMenu, .sideBarToggle {
+    display: none;
+    position: relative;
+  }
+}

@@ -1,0 +1,16 @@
+#somestr {
+  height: 40px;
+  width: 250px;
+  font-size: 18px;
+  box-shadow: -1px 0px 5px 0px #808080;
+}
+
+#somestr:focus {
+  outline: none;
+}
+
+@media (max-width: 600px) {
+  #somestr {
+    margin-top: 80px;
+  }
+}

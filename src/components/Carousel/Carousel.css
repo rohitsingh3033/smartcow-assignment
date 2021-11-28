@@ -1,0 +1,21 @@
+.mainCarousel  img {
+  width: 100vw;
+  height: 450px;
+  filter: brightness(0.5);
+}
+
+.mainCarousel {
+  top: 50px;
+}
+
+.flickity-button {
+  display: none;
+}
+
+.flickity-viewport {
+  height: 450px !important;
+}
+
+.flickity-slider:before {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}

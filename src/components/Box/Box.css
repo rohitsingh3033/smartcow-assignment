@@ -1,0 +1,31 @@
+.box {
+  border: 3px solid grey;
+  max-width: 150px;
+  text-align: center;
+  padding: 55px;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.box:nth-child(3n) {
+  border: 6px solid aqua; 
+}
+
+.boxMain {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 50px;
+  padding-left: 0;
+}
+
+@media(max-width: 1300px) {
+  .boxMain {
+    grid-gap: 100px;
+  }
+}
+
+@media (max-width: 415px) {
+  .boxMain {
+    justify-items: center;
+  }
+}
